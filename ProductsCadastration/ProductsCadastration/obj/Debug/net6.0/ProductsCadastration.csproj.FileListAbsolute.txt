@@ -13,3 +13,18 @@ F:\victo\Documents\workspace\C#\ProductsCadastration\ProductsCadastration\obj\De
 F:\victo\Documents\workspace\C#\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.pdb
 F:\victo\Documents\workspace\C#\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.genruntimeconfig.cache
 F:\victo\Documents\workspace\C#\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ref\ProductsCadastration.dll
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.csproj.AssemblyReference.cache
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.GeneratedMSBuildEditorConfig.editorconfig
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.AssemblyInfoInputs.cache
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.AssemblyInfo.cs
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.csproj.CoreCompileInputs.cache
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.dll
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\refint\ProductsCadastration.dll
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.pdb
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\bin\Debug\net6.0\ProductsCadastration.exe
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\bin\Debug\net6.0\ProductsCadastration.deps.json
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\bin\Debug\net6.0\ProductsCadastration.runtimeconfig.json
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\bin\Debug\net6.0\ProductsCadastration.dll
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\bin\Debug\net6.0\ProductsCadastration.pdb
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ProductsCadastration.genruntimeconfig.cache
+F:\victo\Documents\workspace\C#\Curso Udemy\ProductsCadastration\ProductsCadastration\obj\Debug\net6.0\ref\ProductsCadastration.dll
