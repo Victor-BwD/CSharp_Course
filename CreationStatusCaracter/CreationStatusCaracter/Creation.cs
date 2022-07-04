@@ -10,24 +10,24 @@ namespace CreationStatusCaracter
     {
         public void CreationCaracter()
         {
-            Status p = new Status();
+            Status status = new Status();
 
             Console.WriteLine("Let's make create your caracter in a RPG");
             Console.WriteLine("Your name: ");
-            p.Name = Console.ReadLine();
+            status.Name = Console.ReadLine();
             Console.WriteLine("Your class: ");
-            p.Class = Console.ReadLine();
+            status.Class = Console.ReadLine();
 
             Console.Write("Strong: ");
-            p.Strong = int.Parse(Console.ReadLine());
+            status.Strong = int.Parse(Console.ReadLine());
 
             Console.Write("Dexterity: ");
-            p.Dex = int.Parse(Console.ReadLine());
+            status.Dex = int.Parse(Console.ReadLine());
 
             Console.Write("Intelligence: ");
-            p.Intelligence = int.Parse(Console.ReadLine());
+            status.Intelligence = int.Parse(Console.ReadLine());
 
-            if (p.Intelligence <= 8)
+            if (status.Intelligence <= 8)
             {
                 Console.WriteLine("With this intelligence, you won't be able to read and communicate properly.");
                 Console.WriteLine("Are you sure? YES/NO");
@@ -42,9 +42,9 @@ namespace CreationStatusCaracter
                     do
                     {
                         Console.Write("Intelligence: ");
-                        p.Intelligence = int.Parse(Console.ReadLine());
+                        status.Intelligence = int.Parse(Console.ReadLine());
 
-                    } while (p.Intelligence <= 8);
+                    } while (status.Intelligence <= 8);
                 }
             }
 
@@ -58,8 +58,8 @@ namespace CreationStatusCaracter
             }
 
             Random rnd = new Random();
-            p.Constitution = rnd.Next(1, 20);
-            Console.WriteLine("Your constitution is: {0}", p.Constitution);
+            status.Constitution = rnd.Next(1, 20);
+            Console.WriteLine("Your constitution is: {0}", status.Constitution);
 
             Console.WriteLine("Your caracter is created!");
         }
