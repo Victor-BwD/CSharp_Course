@@ -8,8 +8,12 @@ namespace CreationStatusCaracter
 {
     internal class Creation
     {
+        private int numberOfPoints;
+
         public void CreationCaracter()
         {
+            numberOfPoints = 28;
+
             Status status = new Status();
 
             Console.WriteLine("Let's make create your caracter in a RPG");
@@ -18,35 +22,45 @@ namespace CreationStatusCaracter
             Console.WriteLine("Your class: ");
             status.Class = Console.ReadLine();
 
-            Console.Write("Strong: ");
-            status.Strong = int.Parse(Console.ReadLine());
+            Console.WriteLine("Lets choose your atributtes...");
+            Console.WriteLine("You have {0} points to distribute, choose wisely", numberOfPoints);
+            Console.WriteLine("Choose a number between 4 and 17 for each one");
+            Console.WriteLine("Remember, with 8 or less intelligence you won't be able to read and communicate properly.");
 
-            Console.Write("Dexterity: ");
-            status.Dex = int.Parse(Console.ReadLine());
+            
+            
+                
 
-            Console.Write("Intelligence: ");
-            status.Intelligence = int.Parse(Console.ReadLine());
-
-            if (status.Intelligence <= 8)
+            while (status.Strong < 4 || status.Strong > 17)
             {
-                Console.WriteLine("With this intelligence, you won't be able to read and communicate properly.");
-                Console.WriteLine("Are you sure? YES/NO");
-                string answer = Console.ReadLine().ToUpper();
+                Console.Write("Strong: ");
+                status.Strong = int.Parse(Console.ReadLine());
+                
+                numberOfPoints -= status.Strong;
+                
 
-                if (answer == "YES" || string.IsNullOrEmpty(answer))
-                {
-                    Console.WriteLine("Your caracter is created!");
-                }
-                else
-                {
-                    do
-                    {
-                        Console.Write("Intelligence: ");
-                        status.Intelligence = int.Parse(Console.ReadLine());
-
-                    } while (status.Intelligence <= 8);
-                }
+                Console.WriteLine("{0} Points", numberOfPoints);
             }
+
+            
+            while (status.Dex < 4 || status.Dex > 17)
+            {
+                Console.Write("Dexterity: ");
+                status.Dex = int.Parse(Console.ReadLine());
+                numberOfPoints -= status.Dex;
+
+                Console.WriteLine("{0} Points", numberOfPoints);
+            }
+
+           
+            while (status.Intelligence < 4 || status.Intelligence > 17)
+            {
+                Console.Write("Intelligence: ");
+                status.Intelligence = int.Parse(Console.ReadLine());
+                numberOfPoints -= status.Intelligence;
+                Console.WriteLine("{0} Points", numberOfPoints);
+            }
+
 
             Console.WriteLine("Now is time to roll your constitution... Press enter to roll the dice...");
             string pressEnter = Console.ReadLine();
@@ -58,7 +72,7 @@ namespace CreationStatusCaracter
             }
 
             Random rnd = new Random();
-            status.Constitution = rnd.Next(1, 20);
+            status.Constitution = rnd.Next(4, 17);
             Console.WriteLine("Your constitution is: {0}", status.Constitution);
 
             Console.WriteLine("Your caracter is created!");
