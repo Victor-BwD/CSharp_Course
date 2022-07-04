@@ -48,6 +48,14 @@ namespace CreationStatusCaracter
                 Console.Write("Dexterity: ");
                 status.Dex = int.Parse(Console.ReadLine());
                 numberOfPoints -= status.Dex;
+                while(numberOfPoints < 0)
+                {
+                    numberOfPoints += status.Dex;
+                    Console.WriteLine("Number of points negative, please re-enter with valide stats");
+                    Console.Write("Dexterity: ");
+                    status.Dex = int.Parse(Console.ReadLine());
+                    numberOfPoints -= status.Dex;
+                }
 
                 Console.WriteLine("{0} Points", numberOfPoints);
             }
