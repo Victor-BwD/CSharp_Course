@@ -15,6 +15,7 @@ namespace CreationStatusCaracter
             numberOfPoints = 28;
 
             Status status = new Status();
+            Points points = new Points();
 
             Console.WriteLine("Let's make create your caracter in a RPG");
             Console.WriteLine("Your name: ");
@@ -35,11 +36,8 @@ namespace CreationStatusCaracter
             {
                 Console.Write("Strong: ");
                 status.Strong = int.Parse(Console.ReadLine());
-                
-                numberOfPoints -= status.Strong;
-                
+                points.SpendPoint(status.Strong);
 
-                Console.WriteLine("{0} Points", numberOfPoints);
             }
 
             
@@ -47,17 +45,7 @@ namespace CreationStatusCaracter
             {
                 Console.Write("Dexterity: ");
                 status.Dex = int.Parse(Console.ReadLine());
-                numberOfPoints -= status.Dex;
-                while(numberOfPoints < 0)
-                {
-                    numberOfPoints += status.Dex;
-                    Console.WriteLine("Number of points negative, please re-enter with valide stats");
-                    Console.Write("Dexterity: ");
-                    status.Dex = int.Parse(Console.ReadLine());
-                    numberOfPoints -= status.Dex;
-                }
-
-                Console.WriteLine("{0} Points", numberOfPoints);
+                points.SpendPoint(status.Dex);
             }
 
            
@@ -65,8 +53,7 @@ namespace CreationStatusCaracter
             {
                 Console.Write("Intelligence: ");
                 status.Intelligence = int.Parse(Console.ReadLine());
-                numberOfPoints -= status.Intelligence;
-                Console.WriteLine("{0} Points", numberOfPoints);
+                points.SpendPoint(status.Intelligence);
             }
 
 
