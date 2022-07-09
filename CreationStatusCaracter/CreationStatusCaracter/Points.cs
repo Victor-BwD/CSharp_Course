@@ -11,13 +11,13 @@ namespace CreationStatusCaracter
         private int points;
         private int limitPoints = 28;
 
-        public void SpendPoint(int pointsDistributes)
+        public bool SpendPoint(int pointsDistributes)
         {
+            if(pointsDistributes < 0) return false;
+            if(this.points > limitPoints) return false;
+            
             this.points += pointsDistributes;
-            if(this.points > limitPoints)
-            {
-                throw new ArgumentException("No points left");
-            }
+            return true;
         }
 
         public double getPoints()
